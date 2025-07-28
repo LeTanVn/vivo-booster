@@ -4,9 +4,17 @@ on:
   push:
     branches:
       - main
+    # --- THIS IS THE KEY CHANGE ---
+    # The build will now ONLY run if app/build.gradle is changed.
+    paths:
+      - 'app/build.gradle'
 
 jobs:
   build:
+    # We can add an 'if' condition here for even more control.
+    # This checks if the commit message contains '[build]'.
+    # So you need to change the file AND use the keyword.
+    if: contains(github.event.head_commit.message, '[build]')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -21,9 +29,8 @@ jobs:
         java-version: '17'
 
     - name: Set up Gradle
+      # Cache is now enabled by default because we removed 'cache-disabled'.
       uses: gradle/actions/setup-gradle@v3
-      with:
-        cache-disabled: true
 
     - name: Build with Gradle
       run: ./gradlew assembleDebug
