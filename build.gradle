@@ -1,3 +1,21 @@
-task clean(type: Delete) {
-    delete rootProject.buildDir
+plugins {
+    id 'com.android.application'
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 33
+    namespace 'com.antutu.ABenchMark'
+
+    defaultConfig {
+        applicationId "com.antutu.ABenchMark"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+    }
 }
