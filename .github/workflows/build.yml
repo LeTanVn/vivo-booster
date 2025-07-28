@@ -16,7 +16,9 @@ jobs:
         java-version: '11'
 
     - name: Set up Gradle
-      uses: gradle/actions/setup-gradle@v3  # <-- THIS IS THE FIXED LINE
+      uses: gradle/actions/setup-gradle@v3
+      with:
+        cache-disabled: true  # <-- This is the new line to fix the server error
 
     - name: Build with Gradle
       run: ./gradlew assembleDebug
