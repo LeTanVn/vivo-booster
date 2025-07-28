@@ -2,7 +2,7 @@
 
 A super lightweight, blank Android app designed to trick some phone systems (like Vivo's OriginOS) into enabling a high-performance "benchmark mode" for gaming.
 
-![App Screenshot](https://raw.githubusercontent.com/LeTanVn/vivo-booster/refs/heads/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
+![App Screenshot](https://raw.githubusercontent.com/LeTanVn/vivo-booster/refs/heads/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp)
 
 
 ## The Goal
