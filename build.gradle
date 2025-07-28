@@ -1,8 +1,25 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    id 'com.android.application' version '8.11.1' apply false
+    id 'com.android.application'
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+android {
+    compileSdkVersion 34
+    namespace 'com.antutu.ABenchMark'
+
+    defaultConfig {
+        applicationId "com.antutu.ABenchMark"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // You don't have any dependencies, but this block should still exist.
 }
