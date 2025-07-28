@@ -1,6 +1,9 @@
 name: Build Android APK
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -11,7 +14,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # This is the line we are fixing
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
