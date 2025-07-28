@@ -2,7 +2,11 @@
 
 A super lightweight, blank Android app designed to trick some phone systems (like Vivo's OriginOS) into enabling a high-performance "benchmark mode" for gaming.
 
-![App Screenshot](https://github.com/LeTanVn/vivo-booster/assets/177981504/2dd74457-3770-49c7-8f5b-b9d9c22d7a22)
+# Vivo Booster (Fake AnTuTu)
+
+A super lightweight, blank Android app designed to trick some phone systems (like Vivo's OriginOS) into enabling a high-performance "benchmark mode" for gaming.
+
+![App Screenshot](https://raw.githubusercontent.com/LeTanVn/vivo-booster/refs/heads/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 
 
 ## The Goal
